@@ -168,6 +168,5 @@ class TestFileStorage_methods(unittest.TestCase):
         with self.assertRaises(TypeError):
             models.storage.reload(None)
 
-
 if __name__ == "__main__":
     unittest.main()
