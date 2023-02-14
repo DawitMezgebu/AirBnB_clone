@@ -6,13 +6,13 @@ Unittest classes:
     TestCity_save
     TestCity_to_dict
 """
+
 import os
 import models
 import unittest
 from datetime import datetime
 from time import sleep
 from models.city import City
-
 
 class TestCity_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the City class."""
@@ -189,7 +189,6 @@ class TestCity_to_dict(unittest.TestCase):
         cy = City()
         with self.assertRaises(TypeError):
             cy.to_dict(None)
-
 
 if __name__ == "__main__":
     unittest.main()
