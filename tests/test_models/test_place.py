@@ -6,6 +6,7 @@ Unittest classes:
     TestPlace_save
     TestPlace_to_dict
 """
+
 import os
 import models
 import unittest
@@ -143,7 +144,6 @@ class TestPlace_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             Place(id=None, created_at=None, updated_at=None)
 
-
 class TestPlace_save(unittest.TestCase):
     """Unittests for testing save method of the Place class."""
 
@@ -243,7 +243,6 @@ class TestPlace_to_dict(unittest.TestCase):
         pl = Place()
         with self.assertRaises(TypeError):
             pl.to_dict(None)
-
 
 if __name__ == "__main__":
     unittest.main()
