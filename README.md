@@ -67,5 +67,5 @@ All the code is tested with the unittest module. The test for the classes are in
 
 ## Authors
 
-- Abel Yitages - [Abel](https://github.com/DawitMezgebu)
-- Mehamud Salih - [Mehamud](https://github.com/Mehamud-salih)
+- Dawit Mezgebu - [Dawit Mezgebu](https://github.com/DawitMezgebu)
+- Seife Demissie - [Seife S Demissie](https://github.com/siluye/)
