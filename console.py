@@ -43,7 +43,7 @@ class HBNBCommand(cmd.Cmd):
                     else:
                         try:
                             setattr(obj, args[2], eval(args[3].strip('"')))
-                        except:
+                        except ValueError:
                             setattr(obj, args[2], args[3].strip('"'))
                         storage.save()
             else:
@@ -176,6 +176,7 @@ class HBNBCommand(cmd.Cmd):
             if name_id.split(".")[0] == class_name:
                 num_objs += 1
         print(num_objs)
+
 
 if __name__ == '__main__':
     prompt = HBNBCommand()
