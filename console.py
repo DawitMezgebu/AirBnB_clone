@@ -30,9 +30,9 @@ class HBNBCommand(cmd.Cmd):
                     count += 1
         print(count)
 
-    def do_quit(self, line):
+    def do_quit(self, arg):
         """Quit command to exit the program \n"""
-        return True
+        sys.exit(1)
 
     def do_EOF(self, line):
         """EOF execution to exit the program
